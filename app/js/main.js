@@ -3,9 +3,9 @@ $(function () {
    * Burger
    */
 
-  $(".burger").on("click", function () {
+  $(".js-burger").on("click", function () {
     $(this).children().toggleClass("active");
-    $(".nav").toggleClass("active");
+    $(".js-menu").slideToggle();
     return false;
   });
 });
