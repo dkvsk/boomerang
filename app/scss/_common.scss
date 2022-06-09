@@ -20,7 +20,7 @@ button:focus {
 
 body {
   font: 400 16px/1.5 "Poppins", sans-serif;
-  background-color: #0D141E;
+  background-color: #0d141e;
 }
 
 a {
@@ -52,7 +52,7 @@ a {
 .subtitle {
   font-weight: 500;
   font-size: 24px;
-  color: #29C5F6;
+  color: #29c5f6;
 }
 
 img {
@@ -70,6 +70,48 @@ ul {
   padding: 0;
   list-style: none;
 }
+
+/* btn */
+
+.btn {
+  padding: 24px 64px;
+  font-size: 18px;
+  border-radius: 4px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.03em;
+  text-align: center;
+  transition: 300ms;
+  background: radial-gradient(
+      66.1% 66.1% at 50% 17.8%,
+      #29c5f6 0%,
+      #1c8ade 100%
+    )
+    #29c5f6;
+  box-shadow: 0px 3px 0px #004e86;
+  border-radius: 4px;
+
+  &--dark {
+    background: linear-gradient(
+      263.31deg,
+      rgba(255, 255, 255, 0.04) 4.27%,
+      rgba(255, 255, 255, 0) 100.56%
+    );
+    box-shadow: inset 0px 0px 8px rgba(255, 255, 255, 0.05);
+  }
+}
+
+.btn-app {
+  padding: 21px 16px;
+  background: linear-gradient(
+    263.31deg,
+    rgba(255, 255, 255, 0.04) 4.27%,
+    rgba(255, 255, 255, 0) 100.56%
+  );
+  box-shadow: inset 0px 0px 8px rgba(255, 255, 255, 0.05);
+  height: 72px;
+}
+
 
 /* Input */
 
@@ -117,19 +159,19 @@ input.input-error {
 /* Container */
 
 .container {
-  max-width: 1424px;
+  max-width: 1448px;
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 12px;
 
-  @media screen and (max-width: 1336px) {
-    max-width: 970px;
-  }
-  @media screen and (max-width: 991px) {
-    max-width: 750px;
-  }
-  @media screen and (max-width: 767px) {
-    max-width: 100%;
-    padding: 0 15px;
-  }
+  // @media screen and (max-width: 1336px) {
+  //   max-width: 970px;
+  // }
+  // // @media screen and (max-width: 991px) {
+  // //   max-width: 750px;
+  // // }
+  // // @media screen and (max-width: 767px) {
+  // //   max-width: 100%;
+  // //   padding: 0 15px;
+  // // }
 }
