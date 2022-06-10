@@ -314,9 +314,7 @@
       &:nth-child(2) {
         margin-right: auto;
       }
-      
     }
-
   }
 
   &__statistics {
@@ -367,4 +365,85 @@
     line-height: 1.5;
     color: #ffffff;
   }
+}
+
+
+/*Differences*/
+
+.differences {
+  position: relative;
+  padding-bottom: 212px;
+
+  @media only screen and (max-width: 767px) {
+    padding-bottom: 62px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    max-width: 772px;
+
+    @media only screen and (max-width: 1190px) {
+      max-width: 560px;
+    }
+
+    @media only screen and (max-width: 991px) {
+      max-width: 440px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      margin: 0 auto;
+      // margin-top: 20px;
+    }
+  }
+
+
+  &__title {
+  margin-bottom: 16px;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 28px;
+  }
+  }
+
+  &__text {
+
+    @media only screen and (max-width: 991px) {
+      font-size: 20px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      font-size: 18px;
+    }
+    
+  }
+
+  &__image {
+    position: absolute;
+    bottom: -143px;
+    right: 0;
+    z-index: -1;
+
+    @media only screen and (max-width: 1560px) {
+      right: -100px;
+      height: 800px;
+      max-width: 600px;
+    }
+
+    @media only screen and (max-width: 991px) {
+      max-width: 500px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      right: 0;
+      bottom: 280px;
+      max-width: 365px;
+      height: 365px;
+    }
+
+    @media only screen and (max-width: 575px) {
+      bottom: 330px;
+    }
+  }
+
 }

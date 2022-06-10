@@ -113,6 +113,23 @@ ul {
 }
 
 
+.btn:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #000;
+}
+
+.indicators__button.btn.indicators__button--width:hover {
+  background: blue;
+  border-color:blue;
+}
+
+.btn-app:hover {
+  background-color:#101316;
+  border-color: #101316;
+}
+
+
 /* Input */
 
 input[type="text"],
