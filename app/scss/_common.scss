@@ -47,12 +47,20 @@ a {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+
+  @media only screen and (max-width: 991px) {
+    font-size: 36px;
+  }
 }
 
 .subtitle {
   font-weight: 500;
   font-size: 24px;
   color: #29c5f6;
+
+  @media only screen and (max-width: 991px) {
+    font-size: 20px;
+  }
 }
 
 img {
