@@ -48,8 +48,12 @@ a {
   background-clip: text;
   text-fill-color: transparent;
 
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 1170px) {
     font-size: 36px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    font-size: 28px;
   }
 }
 
@@ -58,8 +62,12 @@ a {
   font-size: 24px;
   color: #29c5f6;
 
-  @media only screen and (max-width: 991px) {
+  @media only screen and (max-width: 1170px) {
     font-size: 20px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    font-size: 18px;
   }
 }
 

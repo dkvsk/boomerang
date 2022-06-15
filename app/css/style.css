@@ -71,9 +71,14 @@ a:hover {
   background-clip: text;
   text-fill-color: transparent;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1170px) {
   .title {
     font-size: 36px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .title {
+    font-size: 28px;
   }
 }
 
@@ -82,9 +87,14 @@ a:hover {
   font-size: 24px;
   color: #29c5f6;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1170px) {
   .subtitle {
     font-size: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .subtitle {
+    font-size: 18px;
   }
 }
 
@@ -785,7 +795,17 @@ input.input-error::-ms-placeholder {
 
 /*Feature*/
 .feature {
-  padding-bottom: 31px;
+  padding-bottom: 245px;
+}
+@media only screen and (max-width: 1500px) {
+  .feature {
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .feature {
+    padding-bottom: 31px;
+  }
 }
 .feature__body {
   display: grid;
@@ -880,5 +900,77 @@ input.input-error::-ms-placeholder {
 @media only screen and (max-width: 991px) {
   .feature__content {
     margin: 0 auto;
+  }
+}
+
+/*Advantages*/
+.advantages {
+  position: relative;
+  margin-bottom: 232px;
+}
+@media only screen and (max-width: 767px) {
+  .advantages {
+    margin-bottom: 77px;
+  }
+}
+.advantages__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 110px;
+}
+@media only screen and (max-width: 991px) {
+  .advantages__content {
+    grid-template-columns: 1fr;
+    grid-gap: 80px;
+  }
+}
+.advantages__title {
+  margin-bottom: 16px;
+}
+.advantages__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: -1;
+}
+@media only screen and (max-width: 767px) {
+  .advantages__image {
+    display: none;
+  }
+}
+.advantages p {
+  margin-bottom: 30px;
+}
+.advantages p:last-child {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 991px) {
+  .advantages__img {
+    order: -1;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .advantages__img {
+    max-width: 450px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .advantages__img {
+    max-width: 267px;
+  }
+}
+.advantages__mobile {
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .advantages__mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: -1;
   }
 }
