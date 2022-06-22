@@ -3,32 +3,581 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="format-detection" content="telephone=no" />
     <title>Boomerang</title>
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <style>
-      .root {
-        text-align: center;
-      }
-      .root__head {
-        font-size: 22px;
-        text-transform: uppercase;
-      }
-    </style>
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-    <ul class="root">
-      <li class="root__head">Boomerang</li>
-      <li class="root__item">
-        <a class="root__link" href="home.html">Главная</a>
-      </li>
-    </ul>
+    <!--#include virtual="/parts/header.html" -->
 
-    <!-- Sprite -->
+    <!-- Indicators -->
 
-    <svg>
-      <use xlink:href="images/icons-sprite.svg#burger"></use>
-    </svg>
+    <div class="indicators">
+      <div class="container">
+        <div class="indicators__header">
+          <div class="indicators__subtitle">
+            Best features of FaaS reflection and rebase protocols
+          </div>
+          <div class="indicators__title">Dynamic market response protocol</div>
+        </div>
+        <div class="indicators__image">
+          <img class="indicators__img" src="./images/boomerang.png" alt="" />
+        </div>
+        <div class="indicators__buttons">
+          <a href="#" class="indicators__button btn indicators__button--width"
+            >Open app</a
+          >
+          <a href="#" class="indicators__button btn btn--dark">Whitepaper</a>
+          <a href="#" class="indicators__button btn-app">
+            <img src="./images/discord-1.svg" alt="" />
+          </a>
+        </div>
+        <div class="indicators__statistics">
+          <div class="indicators__item">
+            <div class="indicators__caption">Holders</div>
+            <div class="indicators__numbers">1,601,211</div>
+          </div>
+          <div class="indicators__item">
+            <div class="indicators__caption">Market Cap</div>
+            <div class="indicators__numbers">$4,389,354.24</div>
+          </div>
+          <div class="indicators__item">
+            <div class="indicators__caption">Circulating supply</div>
+            <div class="indicators__numbers">$24,125,624</div>
+          </div>
+          <div class="indicators__item">
+            <div class="indicators__caption">Price</div>
+            <div class="indicators__numbers">$13,114</div>
+          </div>
+          <div class="indicators__item">
+            <div class="indicators__caption">Backing</div>
+            <div class="indicators__numbers">$2,985</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Differences -->
+
+    <div class="differences">
+      <div class="container">
+        <div class="differences__image">
+          <img src="./images/differences-dekor.png" alt="" />
+        </div>
+        <div class="differences__header">
+          <div class="differences__title title">How is it different?</div>
+          <div class="differences__text subtitle">
+            Boomerang Capital has taken best features of FaaS reflection
+            protocols (such as $MCC, $ReFi and $EXPO) and rebase protocols (such
+            as $OHM, $TIME and $KLIMA), while leaving out the worst ones, and
+            enhancing the mix with the unique operating model features and value
+            added services.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offers -->
+
+    <div class="offers">
+      <div class="container">
+        <div class="offers__title title">
+          Boomerang Capital brings you best features of reflection and rebase
+          tokens.... and more!
+        </div>
+        <div class="offers__content">
+          <div class="offers__rate">
+            <div class="offers__header">
+              <div class="offers__subtitle subtitle">
+                FaaS reflection tokens (e.g. $MCC, $ReFi, $EXPO)
+              </div>
+            </div>
+            <ul class="offers__list">
+              <li class="offers__item">
+                <img class="offers__img" src="./images/check-mark.svg" alt="" />
+                <div class="offers__name">Taxes growing treasury</div>
+              </li>
+              <li class="offers__item">
+                <img class="offers__img" src="./images/check-mark.svg" alt="" />
+                <div class="offers__name">Dividends / Reflections</div>
+              </li>
+              <li class="offers__item">
+                <img class="offers__img" src="./images/check-mark.svg" alt="" />
+                <div class="offers__name">Fixed Supply / No Inflation</div>
+              </li>
+              <li class="offers__item">
+                <img class="offers__img" src="./images/cross.svg" alt="" />
+                <div class="offers__name offers__name--white">
+                  Slow treasury and backing growth
+                </div>
+              </li>
+              <li class="offers__item">
+                <img class="offers__img" src="./images/cross.svg" alt="" />
+                <div class="offers__name offers__name--white">
+                  Market price far from backing per token
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="offers__rate">
+            <div class="offers__header">
+              <div class="offers__subtitle subtitle">
+                Rebase tokens (e.g. $OHM, $TIME, $KLIMA)
+              </div>
+            </div>
+            <ul class="offers__list">
+              <li class="offers__item">
+                <img class="offers__img" src="./images/check-mark.svg" alt="" />
+                <div class="offers__name">Bonding</div>
+              </li>
+              <li class="offers__item">
+                <img class="offers__img" src="./images/check-mark.svg" alt="" />
+                <div class="offers__name">
+                  Quick treasury and backing growth
+                </div>
+              </li>
+              <li class="offers__item">
+                <img class="offers__img" src="./images/check-mark.svg" alt="" />
+                <div class="offers__name">No inflation</div>
+              </li>
+              <li class="offers__item">
+                <img class="offers__img" src="./images/cross.svg" alt="" />
+                <div class="offers__name offers__name--white">
+                  Inflation / Growing supply
+                </div>
+              </li>
+              <li class="offers__item">
+                <img class="offers__img" src="./images/cross.svg" alt="" />
+                <div class="offers__name offers__name--white">
+                  Market price far from backing per token
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="offers__rate">
+            <div class="offers__header">
+              <img class="offers__logo" src="./images/logo.svg" alt="" />
+              <div class="offers__subtitle subtitle">Unique features</div>
+            </div>
+            <ul class="offers__list">
+              <li class="offers__item">
+                <img class="offers__img" src="./images/check-mark.svg" alt="" />
+                <div class="offers__name">Dynamic market response</div>
+              </li>
+              <li class="offers__item">
+                <img class="offers__img" src="./images/check-mark.svg" alt="" />
+                <div class="offers__name">Unique operating model features</div>
+              </li>
+              <li class="offers__item">
+                <img class="offers__img" src="./images/check-mark.svg" alt="" />
+                <div class="offers__name">Unique value added services</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info -->
+
+    <div class="info">
+      <div class="container">
+        <div class="info__body">
+          <div class="info__img">
+            <img src="./images/info.png" alt="" />
+          </div>
+          <div class="info__content">
+            <div class="info__title title">
+              What is dynamic market response?
+            </div>
+            <div class="info__text subtitle">
+              Dynamic market response protocol is a set of automated mechanisms
+              built into the smart contracts of the protocol, that will ensure
+              that the market price of the $BOOM token is oscillating around the
+              fair price of the asset, where fair price of an asset is derived
+              from the backing of the $BOOM token and expected future growth
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature -->
+
+    <div class="feature">
+      <div class="container">
+        <div class="feature__title">
+          Unique feature: Dynamic market response
+        </div>
+        <div class="feature__body">
+          <div class="feature__img">
+            <img src="./images/schedule.png" alt="" />
+          </div>
+          <div class="feature__content">
+            <div class="feature__subtitle subtitle">Legend:</div>
+            <div class="feature__item">Minimum trading price</div>
+            <div class="feature__item feature__item--green">
+              Fair zone bonds
+            </div>
+            <div class="feature__item feature__item--pink">
+              Maximum trading price
+            </div>
+            <div class="feature__item feature__item--purpel">Fair price</div>
+            <div class="feature__item feature__item--yellow">
+              Backing of the token
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advantages -->
+
+    <div class="advantages">
+      <div class="container">
+        <div class="advantages__content">
+          <div class="advantages__body">
+            <div class="advantages__title title">
+              Sustainable growth of the backing
+            </div>
+            <div class="advantages__text subtitle">
+              <p>
+                There are two types of protocol features that will help
+                continuously grow the underlying value of the $BOOM token
+              </p>
+              <p>
+                Operating model features that will retain current $BOOM token
+                holders, attract additional buyers and monetize the trading
+                activity
+              </p>
+              <p>
+                Value added services, e.g. investment management, services
+                provided to users, services provided to other protocols
+              </p>
+            </div>
+          </div>
+          <img class="advantages__img" src="./images/advantages.png" alt="" />
+        </div>
+        <img class="advantages__image" src="./images/advantages-1.svg" alt="" />
+        <img
+          class="advantages__mobile"
+          src="./images/advantages-2.svg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- Sources  -->
+
+    <div class="sources">
+      <div class="container">
+        <div class="sources__title title">
+          Sources of the sustainable growth of the backing price
+        </div>
+        <div class="sources__info">
+          <div class="sources__subtitle subtitle">Legend:</div>
+          <ul class="sources__list">
+            <li class="sources__item">
+              <img src="./images/sources-1.svg" alt="" />
+              <span>Feature completed</span>
+            </li>
+            <li class="sources__item">
+              <img src="./images/sources-2.svg" alt="" />
+              <span>Under construction</span>
+            </li>
+            <li class="sources__item">
+              <img src="./images/sources-3.svg" alt="" />
+              <span>In ideation</span>
+            </li>
+          </ul>
+        </div>
+        <div class="sources__inner">
+          <div class="sources__logo">
+            <img class="sources__photo" src="./images/sources.svg" alt="" />
+            <div class="sources__line sources__line--first">
+              <img src="./images/lines-1.svg" alt="" />
+            </div>
+            <div class="sources__line sources__line--second">
+              <img src="./images/lines-2.svg" alt="" />
+            </div>
+            <div class="sources__mobile sources__mobile--three">
+              <img src="./images/lines-4.svg" alt="" />
+            </div>
+            <div class="sources__mobile sources__mobile--four">
+              <img src="./images/lines-5.svg" alt="" />
+            </div>
+          </div>
+          <div class="sources__items">
+            <div class="sources__block sources__block--main">
+              <div class="sources__elems">
+                <div class="sources__elem">
+                  <img
+                    class="sources__image"
+                    src="./images/sources-4.svg"
+                    alt=""
+                  />
+                  <p>Tax</p>
+                </div>
+                <div class="sources__elem">
+                  <img
+                    class="sources__image"
+                    src="./images/sources-4.svg"
+                    alt=""
+                  />
+                  <p>Buybacks</p>
+                </div>
+                <div class="sources__elem">
+                  <img
+                    class="sources__image"
+                    src="./images/sources-4.svg"
+                    alt=""
+                  />
+                  <p>Sellbacks</p>
+                </div>
+                <div class="sources__elem">
+                  <img
+                    class="sources__image"
+                    src="./images/sources-4.svg"
+                    alt=""
+                  />
+                  <p>Operating model feature 4</p>
+                </div>
+                <div class="sources__elem">
+                  <img
+                    class="sources__image"
+                    src="./images/sources-4.svg"
+                    alt=""
+                  />
+                  <p>Operating model feature 5</p>
+                </div>
+                <div class="sources__elem">
+                  <img
+                    class="sources__image"
+                    src="./images/sources-4.svg"
+                    alt=""
+                  />
+                  <p>Operating model feature 6</p>
+                </div>
+                <div class="sources__elem">
+                  <img
+                    class="sources__image"
+                    src="./images/sources-5.svg"
+                    alt=""
+                  />
+                  <p>Operating model feature 7</p>
+                </div>
+              </div>
+              <div class="sources__name subtitle">Operating Model Features</div>
+            </div>
+            <div class="sources__block">
+              <div class="sources__elems sources__elems--yellow">
+                <div class="sources__elem">
+                  <img
+                    class="sources__image"
+                    src="./images/sources-4.svg"
+                    alt=""
+                  />
+                  <p>Treasury investment</p>
+                </div>
+                <div class="sources__elem">
+                  <img
+                    class="sources__image"
+                    src="./images/sources-5.svg"
+                    alt=""
+                  />
+                  <p>Value added service 2</p>
+                </div>
+                <div class="sources__elem">
+                  <img
+                    class="sources__image"
+                    src="./images/sources-5.svg"
+                    alt=""
+                  />
+                  <p>Value added service 3</p>
+                </div>
+                <div class="sources__elem">
+                  <img
+                    class="sources__image"
+                    src="./images/sources-5.svg"
+                    alt=""
+                  />
+                  <p>Value added service 4</p>
+                </div>
+                <div class="sources__elem">
+                  <img
+                    class="sources__image"
+                    src="./images/sources-6.svg"
+                    alt=""
+                  />
+                  <p>Value added service 5</p>
+                </div>
+              </div>
+              <div class="sources__name subtitle sources__name--yellow">
+                Value Added Services
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Structure  -->
+
+    <div class="structure">
+      <div class="container">
+        <div class="structure__wrapper">
+          <div class="structure__content">
+            <div class="structure__header">
+              <div class="structure__title title">Initial tax structure</div>
+              <div class="structure__text subtitle">
+                Initial tax structure of the project will help to kick start the
+                project's marketing budget and ensure treasury inflows around
+                important project announcements
+              </div>
+            </div>
+            <div class="structure__body">
+              <div class="structure__head subtitle">
+                Initial transaction allocation
+              </div>
+              <div class="structure__sections">
+                <div class="structure__section">
+                  <div class="structure__item structure__item--blue">
+                    <span>Buy tax</span>
+                    <p>10%</p>
+                  </div>
+                  <div class="structure__item structure__item--dark-blue">
+                    <span>Reflections</span>
+                    <p>4%</p>
+                  </div>
+                  <div class="structure__item structure__item--black">
+                    <span>Treasury</span>
+                    <p>3%</p>
+                  </div>
+                  <div class="structure__item structure__item--dark-blue">
+                    <span>Marketing</span>
+                    <p>2%</p>
+                  </div>
+                  <div class="structure__item structure__item--black">
+                    <span>Liquidity Pool</span>
+                    <p>1%</p>
+                  </div>
+                </div>
+                <div class="structure__section">
+                  <div class="structure__item structure__item--blue">
+                    <span>Sell tax</span>
+                    <p>10%</p>
+                  </div>
+                  <div class="structure__item structure__item--dark-blue">
+                    <span>Reflections</span>
+                    <p>4%</p>
+                  </div>
+                  <div class="structure__item structure__item--black">
+                    <span>Treasury</span>
+                    <p>3%</p>
+                  </div>
+                  <div class="structure__item structure__item--dark-blue">
+                    <span>Marketing</span>
+                    <p>2%</p>
+                  </div>
+                  <div class="structure__item structure__item--black">
+                    <span>Liquidity Pool</span>
+                    <p>1%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="structure__img">
+            <img src="./images/structure.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Roadmap -->
+
+    <div class="roadmap">
+      <div class="container">
+        <div class="roadmap__sections">
+          <div class="roadmap__section">
+            <div class="roadmap__title title">Short term project roadmap</div>
+            <div class="roadmap__text subtitle">
+              We plan to announce and release several protocol features
+              throughout the first 3 weeks after the launch, combined with other
+              important announcements and intensive marketing campaign aimed at
+              raising the interest in the project and understanding of the
+              protocol
+            </div>
+          </div>
+          <div class="roadmap__section">
+            <div class="roadmap__subtitle subtitle">
+              Short-term project roadmap
+            </div>
+            <div class="roadmap__cards">
+              <div class="roadmap__card">
+                <div class="roadmap__header">
+                  <p>Week 1 after ignition phase launch</p>
+                  <img class="roadmap__img" src="./images/roadmap.svg" alt="" />
+                </div>
+                <ul class="roadmap__list">
+                  <li class="roadmap__item">Token and ignition phase launch</li>
+                  <li class="roadmap__item">
+                    Operating model feature 4 announcement
+                  </li>
+                  <li class="roadmap__item">
+                    Operating model feature 4 release
+                  </li>
+                  <li class="roadmap__item">
+                    Operating model feature 5 announcement
+                  </li>
+                </ul>
+              </div>
+              <div class="roadmap__card">
+                <div class="roadmap__header">
+                  <p>Week 2 after the launch</p>
+                  <img class="roadmap__img" src="./images/roadmap.svg" alt="" />
+                </div>
+                <ul class="roadmap__list">
+                  <li class="roadmap__item">CMC / CG listing</li>
+                  <li class="roadmap__item">
+                    Operating model feature 5 release
+                  </li>
+                  <li class="roadmap__item">AirDrop tokens distribution</li>
+                  <li class="roadmap__item">
+                    Ignition phase conclusion and launch of dynamic market
+                    response mechanisms
+                  </li>
+                </ul>
+              </div>
+              <div class="roadmap__card">
+                <div class="roadmap__header">
+                  <p>Week 3 after the launch</p>
+                  <img class="roadmap__img" src="./images/roadmap.svg" alt="" />
+                </div>
+                <ul class="roadmap__list">
+                  <li class="roadmap__item">Major press publications</li>
+                  <li class="roadmap__item">
+                    Operating model feature 6 announcement
+                  </li>
+                  <li class="roadmap__item">
+                    Website, dApp and dashboard enchancements released
+                  </li>
+                  <li class="roadmap__item">Major partnership announcement</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--#include virtual="/parts/footer.html" -->
+
+    <script src="./libs/jquery/jquery-3.2.1.min.js"></script>
+    <script src="./libs/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
