@@ -1,5 +1,5 @@
 # nacometa
-https://dkvsk.github.io/nacometa/
+https://dkvsk.github.io/boomerang/
 
 ## start project 
 - npm install (npm i) устнавливает зависимость 
