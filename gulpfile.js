@@ -14,7 +14,7 @@ async function buildhtml() {
   let includes = new ssi("app/", "docs/", "/**/*.html");
   includes.compile();
 
-  del("build/parts", { force: true });
+  del("docs/parts", { force: true });
 
   return src("docs/*.html").pipe(formatHtml()).pipe(dest("docs"));
 }
