@@ -188,10 +188,6 @@
   }
 }
 
-.footer {
-  display: none;
-}
-
 /*Indicators*/
 
 .indicators {
@@ -1250,10 +1246,10 @@
 /*Roadmap*/
 
 .roadmap {
-  padding-bottom: 62px;
+  margin-bottom: 62px;
 
   @media only screen and (max-width: 767px) {
-    padding-bottom: 52px;
+   margin-bottom: 0;
   }
 
   &__sections {
@@ -1286,7 +1282,7 @@
       margin-bottom: 30px;
     }
 
-     &::before {
+    &::before {
       content: "";
       position: absolute;
       top: 0;
@@ -1315,7 +1311,7 @@
 
   &__header {
     clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 8% 50%, 0% 0%);
-    background: linear-gradient(180deg, #4BD4FF 0%, #007AD5 100%);
+    background: linear-gradient(180deg, #4bd4ff 0%, #007ad5 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1337,7 +1333,7 @@
       position: absolute;
       top: 4px;
       left: 0;
-      background-image:linear-gradient(180deg, #4BD4FF 0%, #007AD5 100%);;
+      background-image: linear-gradient(180deg, #4bd4ff 0%, #007ad5 100%);
       width: 11px;
       height: 11px;
       border-radius: 10px;
@@ -1353,8 +1349,72 @@
     }
   }
 
-
   &__list {
     padding: 0 10px;
+  }
+}
+
+/*Footer*/
+
+.footer {
+  position: relative;
+  overflow: hidden;
+  padding: 160px 0 116px;
+
+  @media only screen and (max-width: 991px) {
+    padding: 52px 0 62px;
+  }
+
+  &__wrap {
+    // position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__socials {
+    display: flex;
+    margin-bottom: 39px;
+
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__social {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    height: 65px;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+
+    @media only screen and (max-width: 767px) {
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+
+  &__text {
+    color: #465a79;
+    text-align: center;
+  }
+
+  &__image {
+    z-index: -1;
+    position: absolute;
+    bottom: -38px;
+    right: 3.5vw;
+
+    @media only screen and (max-width: 1070px) {
+     right: 1px;
+    }
+
+    @media only screen and (max-width: 991px) {
+      display: none;
+    }
   }
 }
