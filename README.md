@@ -1,6 +1,10 @@
 # nacometa
 https://dkvsk.github.io/boomerang/
 
+1. Создаем репозиторий
+2. Копируем ссылку
+3. В Git Bash Here пишим команду (git clone) и вставляем ссылку скопированную в HTTPS
+
 ## start project 
 - npm install (npm i) устнавливает зависимость 
 - npm start (npm run start) старт проекта  http://localhost:3000
